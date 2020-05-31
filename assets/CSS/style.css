@@ -55,11 +55,11 @@ main {
 }
 
 .c-1 { 
-    border-top: 4px solid var(--red);
+    border-top: 4px solid var(--cyan);
     grid-area: sp; 
 }
 .c-2 { 
-    border-top: 4px solid var(--cyan);
+    border-top: 4px solid var(--red);
     grid-area: tb;
  }
 .c-3 { 
@@ -73,10 +73,10 @@ main {
 
 .card {
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     background: var(--very-light-gray);
     border-radius: 0.625rem;
-    box-shadow: 0px 14px 20px -5px rgba(218,228,240,1);
+    box-shadow: 0px 15px 20px var(--shadow);
 
     display: flex;
     flex-flow: column;
@@ -87,7 +87,10 @@ main {
     padding: 2em 1.5em;
 }
 
-.card:hover { transform: translateY(-6px); }
+.card:hover { 
+    transform: translateY(-6px); 
+    box-shadow: 0px 17px 30px var(--shadow-hover);
+}
 
 .card > h2 {
     color: var(--very-dark-blue);
@@ -149,5 +152,4 @@ footer {
 }
 
 footer a { font-weight: 700; }
-
 footer a:hover { color: var(--grayish-blue); }

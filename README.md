@@ -8,7 +8,7 @@ A challenge from Front-End Mentor:
 - use the given style guide to start the work-flow
 
 [Live Preview](https://awwmicky.github.io/four-card-feature-section_front-end-mentor-io/) | 
-[Front-End Mentor Profile](https://link)
+[Front-End Mentor](https://www.frontendmentor.io/solutions/four-card-feature-section-html-css-grid-flexbox-variables-Yh-6Nb6Fj)
 
 ## Built With
 
