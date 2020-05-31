@@ -34,7 +34,7 @@ html, body {
 
 body {
     /* text-align: center; */
-    background:#ffffff;
+    background: var(--very-light-gray);
     color: #333;
     line-height: 1;
     letter-spacing: .05em;
