@@ -1,7 +1,42 @@
+main {
+    padding: 0 2em;
+    margin: 6.25em 0 4.5em;
+}
+
 /* === CONTENT-TITLE === */
 
 .content-title {
     text-align: center;
+    margin-bottom: 4.5em;
+}
+
+.main-title {
+    color: var(--very-dark-blue);
+    margin-bottom: 0.5em;
+}
+
+.top-text {
+    font-size: 1.4375rem;
+    font-weight: 200;
+}
+
+.bottom-text {
+    font-size: 1.48rem;
+    line-height: 2;
+}
+
+.sub-title {
+    color: var(--grayish-blue);
+    letter-spacing: 0.25px;
+    line-height: 1.5;
+    max-width: 325px;
+    margin: 0 auto;
+}
+
+@media (min-width: 650px) {
+    .top-text { font-size: 2.125rem; }
+    .bottom-text { font-size: 2.15rem; }
+    .sub-title { max-width: 550px !important; }
 }
 
 /* === CONTENT-CARDS === */
@@ -9,47 +44,50 @@
 .content-cards {
     display: grid;
     justify-items: center;
-    /* align-content: space-around; */
-    gap: 1em;
+    grid-column-gap: 1em;
+    grid-row-gap: 1.3em;
     grid-template-areas: 
         "sp"
         "tb"
         "kr"
         "cl"
     ;
-    /* width: auto; */
-    /* max-width: 1080px; */
-    /* margin: 0 auto; */
 }
 
 .c-1 { 
-    border-top: 2px solid var(--red);
+    border-top: 4px solid var(--red);
     grid-area: sp; 
 }
 .c-2 { 
-    border-top: 2px solid var(--cyan);
+    border-top: 4px solid var(--cyan);
     grid-area: tb;
  }
 .c-3 { 
-    border-top: 2px solid var(--orange);
+    border-top: 4px solid var(--orange);
     grid-area: kr; 
 }
 .c-4 { 
-    border-top: 2px solid var(--blue);
+    border-top: 4px solid var(--blue);
     grid-area: cl; 
 }
 
 .card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
     background: var(--very-light-gray);
     border-radius: 0.625rem;
+    box-shadow: 0px 14px 20px -5px rgba(218,228,240,1);
 
     display: flex;
     flex-flow: column;
-
-    max-width: 350px;
-    height: 250px;
+   
+    max-width: 325px;
+    /* max-width: 100%; */
+    height: 230px;
     padding: 2em 1.5em;
 }
+
+.card:hover { transform: translateY(-6px); }
 
 .card > h2 {
     color: var(--very-dark-blue);
@@ -62,12 +100,26 @@
     font-size: 0.75rem;
     /* font-weight: 700; */
     line-height: 1.8;
+    max-width: 270px;
 }
 
 .card-img {
     margin-top: auto;
     margin-left: auto;
 }
+
+@media (min-width: 650px) {
+    .content-cards {
+        grid-template-areas: 
+            "sp tb"
+            "kr cl"
+        ;
+    }
+
+    .c-1, .c-3 { justify-self: right; }
+    .c-2, .c-4 { justify-self: left; }
+}
+
 
 @media (min-width: 1110px) {
     .content-cards {
@@ -77,14 +129,23 @@
             "sp kr cl"
             ".  kr  ."
         ;
+        grid-template-columns: auto 320px auto;
+    }
+
+    .c-2, .c-3 { justify-self: initial; }
+
+    .card {
+        max-width: 375px;
+        height: 250px;
     }
 }
 
 /* === FOOTER === */
 
 footer {
+    font-size: 0.75rem;
     text-align: center;
-    padding: 0.25em 0;
+    padding: 0.75em 0;
 }
 
 footer a { font-weight: 700; }
