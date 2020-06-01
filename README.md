@@ -19,8 +19,8 @@ HTML | CSS: Grid - Flexbox - Variables
 ![preview](./work/design/desktop-preview.jpg)
 
 <!-- 
-=== SUBMITION ===
-- title : [challenge name] — HTML, CSS (Grid, Flexbox, Variables)
+=== SUBMISSION ===
+- title : [challenge-name] — HTML, CSS (Grid, Flexbox, Variables)
 - code  : https://github.com/awwmicky/[repo-name]
 - demo  : https://awwmicky.github.io/[repo-name]/
 -->
