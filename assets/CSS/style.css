@@ -44,8 +44,7 @@ main {
 .content-cards {
     display: grid;
     justify-items: center;
-    grid-column-gap: 1em;
-    grid-row-gap: 1.3em;
+    gap: 1.5em;
     grid-template-areas: 
         "sp"
         "tb"
